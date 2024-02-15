@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
-
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 const pageTitle = "Title of this blog";
 const pageAboutMe = "About Me";
 
@@ -22,9 +23,10 @@ const fontWeight = "bold";
 const textCase = "lowercase";
 ---
 
-<a href="/">Home</a>
+<!--<a href="/">Home</a>
 <a href="/about/">About</a>
-<a href="/blog/">Blog</a>
+<a href="/blog/">Blog</a>-->
+<Navigation />
 
 <html lang="en">
   <head>
@@ -90,5 +92,6 @@ const textCase = "lowercase";
         <p>My goal is not 3 days.</p>
       )
     }
+    <Footer />
   </body>
 </html>
